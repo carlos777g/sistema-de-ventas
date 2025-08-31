@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export function HomeTemplate() {
+export function Sidebar() {
   return (
     <Container>
-      <span>HomeTemplate</span>
+      <span>Sidebar</span>
     </Container>
   );
 }
 
 const Container = styled.div`
-    height: 100vh;
+    
 `;

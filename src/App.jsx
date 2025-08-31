@@ -1,17 +1,21 @@
-import styled from "styled-components";
-import { GlobalStyles } from "./index.js";
+import styled, { ThemeProvider } from "styled-components";
+import { GlobalStyles, MyRoutes, Sidebar } from "./index.js";
 import { Device } from "./styles/breakpoints.jsx";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Container>
         <GlobalStyles />
-        <section className="contentSidebar">Sidebar</section>
+        <section className="contentSidebar">
+          <Sidebar />
+        </section>
         <section className="contentMenuHamburger">Menu Hambuger</section>
-        <section className="contentRouters">Routes</section>
+        <section className="contentRouters">
+          <MyRoutes />
+        </section>
       </Container>
-    </>
+    </ThemeProvider>
   );
 }
 const Container = styled.main`
