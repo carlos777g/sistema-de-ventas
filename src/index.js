@@ -5,5 +5,7 @@ export * from './index';
 export * from './main';
 export * from './pages/Home';
 export * from './routers/routes';
+export * from './store/ThemeStore';
 export * from './styles/GlobalStyles';
 export * from './styles/breakpoints';
+export * from './styles/themes';

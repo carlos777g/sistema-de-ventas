@@ -1,10 +1,11 @@
 import styled, { ThemeProvider } from "styled-components";
-import { GlobalStyles, MyRoutes, Sidebar } from "./index.js";
+import { GlobalStyles, MyRoutes, Sidebar, useThemeStore } from "./index.js";
 import { Device } from "./styles/breakpoints.jsx";
 
 function App() {
+  const {themeStyle} = useThemeStore();
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={themeStyle}>
       <Container>
         <GlobalStyles />
         <section className="contentSidebar">
