@@ -12,7 +12,7 @@ import { TbBrandSupabase } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { BsArrowDown, BsArrowUpShort } from "react-icons/bs";
 import { FaBalanceScale } from "react-icons/fa";
-import logo from "../assets/logo-ventas.png";
+import logo from "../../public/logo-ventas.png";
 import { FcGoogle } from "react-icons/fc";
 
 import { RiCloseLine } from "react-icons/ri";
